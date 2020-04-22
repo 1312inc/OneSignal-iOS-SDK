@@ -187,7 +187,7 @@ typedef enum {GET, POST, HEAD, PUT, DELETE, OPTIONS, CONNECT, TRACE} HTTPMethod;
 #define SHARED_CATEGORY_LIST @"com.onesignal.shared_registered_categories"
 
 // Device types
-#define DEVICE_TYPE_PUSH 0
+#define DEVICE_TYPE_PUSH 9
 #define DEVICE_TYPE_EMAIL 11
 
 #ifndef OS_TEST

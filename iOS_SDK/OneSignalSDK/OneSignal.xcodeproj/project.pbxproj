@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		C3890607242AB28B002DDFFA /* OneSignalXCFrameworkBuilder */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C3890608242AB28B002DDFFA /* Build configuration list for PBXAggregateTarget "OneSignalXCFrameworkBuilder" */;
+			buildPhases = (
+				C389060B242AB295002DDFFA /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = OneSignalXCFrameworkBuilder;
+			productName = OneSignalXCFrameworkBuilder;
+		};
 		CA2951BD2167F9860064227A /* OneSignal-Static-Framework */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = CA2951BF2167F9860064227A /* Build configuration list for PBXAggregateTarget "OneSignal-Static-Framework" */;
@@ -145,7 +156,7 @@
 		912412221E73342200E41FD7 /* OneSignalLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 912411FB1E73342200E41FD7 /* OneSignalLocation.m */; };
 		912412231E73342200E41FD7 /* OneSignalLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 912411FB1E73342200E41FD7 /* OneSignalLocation.m */; };
 		912412241E73342200E41FD7 /* OneSignalLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 912411FB1E73342200E41FD7 /* OneSignalLocation.m */; };
-		912412251E73342200E41FD7 /* OneSignalMobileProvision.h in Headers */ = {isa = PBXBuildFile; fileRef = 912411FC1E73342200E41FD7 /* OneSignalMobileProvision.h */; };
+		912412251E73342200E41FD7 /* OneSignalMobileProvision.h in Headers */ = {isa = PBXBuildFile; fileRef = 912411FC1E73342200E41FD7 /* OneSignalMobileProvision.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		912412261E73342200E41FD7 /* OneSignalMobileProvision.m in Sources */ = {isa = PBXBuildFile; fileRef = 912411FD1E73342200E41FD7 /* OneSignalMobileProvision.m */; };
 		912412271E73342200E41FD7 /* OneSignalMobileProvision.m in Sources */ = {isa = PBXBuildFile; fileRef = 912411FD1E73342200E41FD7 /* OneSignalMobileProvision.m */; };
 		912412281E73342200E41FD7 /* OneSignalMobileProvision.m in Sources */ = {isa = PBXBuildFile; fileRef = 912411FD1E73342200E41FD7 /* OneSignalMobileProvision.m */; };
@@ -231,6 +242,7 @@
 		9D59C2F92321C7780008ECCF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3300F923149DAE000F0A83 /* CoreGraphics.framework */; };
 		9DDFEEF223189C0800EAE0BB /* OneSignalViewHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3300F423145AF3000F0A83 /* OneSignalViewHelper.h */; };
 		9DDFEEF323189C0E00EAE0BB /* OneSignalViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3300F223145AF3000F0A83 /* OneSignalViewHelper.m */; };
+		C39791722450CE6E006B474E /* OneSignalMobileProvision.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 912411FC1E73342200E41FD7 /* OneSignalMobileProvision.h */; };
 		CA08FC731FE99AFD004C445F /* OneSignalClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CA08FC721FE99AFD004C445F /* OneSignalClient.m */; };
 		CA08FC741FE99AFF004C445F /* OneSignalClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CA08FC721FE99AFD004C445F /* OneSignalClient.m */; };
 		CA08FC751FE99B00004C445F /* OneSignalClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CA08FC721FE99AFD004C445F /* OneSignalClient.m */; };
@@ -350,6 +362,7 @@
 			dstSubfolderSpec = 16;
 			files = (
 				918CB0301E73388E0067130F /* OneSignal.h in CopyFiles */,
+				C39791722450CE6E006B474E /* OneSignalMobileProvision.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +513,8 @@
 		9D348536233C669E00EB81C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9D348538233D2DCF00EB81C9 /* OneSignalLocationOverrider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneSignalLocationOverrider.h; sourceTree = "<group>"; };
 		9D348539233D2E3600EB81C9 /* OneSignalLocationOverrider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneSignalLocationOverrider.m; sourceTree = "<group>"; };
+		C389057A242AB137002DDFFA /* OneSignalFramework copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OneSignalFramework copy-Info.plist"; path = "/Users/administrator/1312io/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/OneSignalFramework copy-Info.plist"; sourceTree = "<absolute>"; };
+		C3890606242AB144002DDFFA /* OneSignalFramework-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OneSignalFramework-iOS copy-Info.plist"; path = "/Users/administrator/1312io/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/OneSignalFramework-iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		CA08FC711FE99AFD004C445F /* OneSignalClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneSignalClient.h; sourceTree = "<group>"; };
 		CA08FC721FE99AFD004C445F /* OneSignalClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneSignalClient.m; sourceTree = "<group>"; };
 		CA08FC761FE99B13004C445F /* OneSignalRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneSignalRequest.h; sourceTree = "<group>"; };
@@ -628,6 +643,8 @@
 				37747F9519147D6500558FAD /* Frameworks */,
 				3E2400391D4FFC31008BDE70 /* OneSignalFramework */,
 				37747F9419147D6500558FAD /* Products */,
+				C389057A242AB137002DDFFA /* OneSignalFramework copy-Info.plist */,
+				C3890606242AB144002DDFFA /* OneSignalFramework-iOS copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1022,6 +1039,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				912412251E73342200E41FD7 /* OneSignalMobileProvision.h in Headers */,
 				CACBAA96218A6243000ACAA5 /* OSInAppMessageViewController.h in Headers */,
 				CA47439D2190FEA80020DC8C /* OSTrigger.h in Headers */,
 				7A1232A4235E175C002B6CE3 /* OneSignalOutcomeEventsController.h in Headers */,
@@ -1031,7 +1049,6 @@
 				CACBAAA8218A6280000ACAA5 /* OSJSONHandling.h in Headers */,
 				912412211E73342200E41FD7 /* OneSignalLocation.h in Headers */,
 				912412291E73342200E41FD7 /* OneSignalReachability.h in Headers */,
-				912412251E73342200E41FD7 /* OneSignalMobileProvision.h in Headers */,
 				91F58D7A1E7C7D3F0017D24D /* OneSignalNotificationSettings.h in Headers */,
 				CA4742E4218B8FF30020DC8C /* OSTriggerController.h in Headers */,
 				7A1232AA235E17B4002B6CE3 /* OneSignalSessionManager.h in Headers */,
@@ -1158,6 +1175,11 @@
 						DevelopmentTeam = 99SW8E36CT;
 						ProvisioningStyle = Automatic;
 					};
+					C3890607242AB28B002DDFFA = {
+						CreatedOnToolsVersion = 11.3.1;
+						DevelopmentTeam = G9XNUN3P57;
+						ProvisioningStyle = Automatic;
+					};
 					CA2951BD2167F9860064227A = {
 						DevelopmentTeam = 4ZR3G6ZK9T;
 						ProvisioningStyle = Automatic;
@@ -1187,6 +1209,7 @@
 				911E2CB91E398AB3003112A4 /* UnitTests */,
 				CAA98897213F4B34009FEE5E /* OneSignal-Dynamic-Framework */,
 				CA2951BD2167F9860064227A /* OneSignal-Static-Framework */,
+				C3890607242AB28B002DDFFA /* OneSignalXCFrameworkBuilder */,
 			);
 		};
 /* End PBXProject section */
@@ -1209,6 +1232,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		C389060B242AB295002DDFFA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -rd \"OneSignal.xcframework\"\nxcodebuild archive -scheme OneSignalFramework -destination \"generic/platform=iOS\" -archivePath \"$TEMP_DIR/OneSignal.iOS.xcarchive\" SKIP_INSTALL=NO\nxcodebuild archive -scheme OneSignalFramework -destination \"platform=iOS Simulator,name=iPhone 11\" -archivePath \"$TEMP_DIR/OneSignal.iOS-simulator.xcarchive\" SKIP_INSTALL=NO\nxcodebuild archive -scheme OneSignalFramework -destination \"platform=macOS,variant=Mac Catalyst\" -archivePath \"$TEMP_DIR/OneSignal.macOS.xcarchive\" SKIP_INSTALL=NO\nxcodebuild -create-xcframework -framework \"$TEMP_DIR/OneSignal.iOS.xcarchive/Products/Library/Frameworks/OneSignal.framework\" -framework \"$TEMP_DIR/OneSignal.iOS-simulator.xcarchive/Products/Library/Frameworks/OneSignal.framework\" -framework \"$TEMP_DIR/OneSignal.macOS.xcarchive/Products/Library/Frameworks/OneSignal.framework\" -output \"OneSignal.xcframework\"\n\n\nShowing All Errors Only\nunable to read the file at '/Users/administrator/Library/Developer/Xcode/DerivedData/OneSignalSDK-awutugrwcmfxwwdmokzkcttqrqzs/Build/Intermediates.noindex/OneSignal.build/Debug-iphoneos/OneSignalXCFrameworkBuilder.build/OneSignal.iOS-simulator.xcarchive/Products/Library/Frameworks/OneSignal.framework/OneSignal'\n\n\n";
+		};
 		CA2951BE2167F9860064227A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1498,6 +1538,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		C3890609242AB28B002DDFFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9XNUN3P57;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C389060A242AB28B002DDFFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9XNUN3P57;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
 		CA2951B62167F4120064227A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1568,6 +1626,7 @@
 		CA2951B82167F4120064227A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -1720,6 +1779,7 @@
 		CA2951C42167FB950064227A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -1836,6 +1896,15 @@
 			buildConfigurations = (
 				CA2951B92167F4120064227A /* Release */,
 				CA2951C52167FB950064227A /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3890608242AB28B002DDFFA /* Build configuration list for PBXAggregateTarget "OneSignalXCFrameworkBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3890609242AB28B002DDFFA /* Release */,
+				C389060A242AB28B002DDFFA /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

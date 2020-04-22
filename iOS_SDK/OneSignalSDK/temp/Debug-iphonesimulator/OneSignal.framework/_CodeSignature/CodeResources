@@ -6,11 +6,15 @@
 	<dict>
 		<key>Headers/OneSignal.h</key>
 		<data>
-		Tnv3K4i7I6lTSYwETIIY1exr7Cg=
+		iEQHA5jAXcxrqNbrsOoOtMz/lMo=
+		</data>
+		<key>Headers/OneSignalMobileProvision.h</key>
+		<data>
+		+DqqFikq9nosHO9VbxB8pq6SgfE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Jt1i4ceSi4gtrOylL2T21mDZzfA=
+		ehBqNGA7Pzs0OSb2f7SlzEq3uhk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -23,11 +27,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Tnv3K4i7I6lTSYwETIIY1exr7Cg=
+			iEQHA5jAXcxrqNbrsOoOtMz/lMo=
 			</data>
 			<key>hash2</key>
 			<data>
-			G/q+PsHbZ9ORSqkcWmwNC9tJC+xLk+lu6H5fQ59Wdp8=
+			WpmAl9Avm16XcQp1yYH4AGO3/Pz5A+eG3faGAhaJ9z0=
+			</data>
+		</dict>
+		<key>Headers/OneSignalMobileProvision.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+DqqFikq9nosHO9VbxB8pq6SgfE=
+			</data>
+			<key>hash2</key>
+			<data>
+			EqwoOamhUq1eDZ/jmmi+Qyg8czQjmzUpfSbxENhnQ1c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

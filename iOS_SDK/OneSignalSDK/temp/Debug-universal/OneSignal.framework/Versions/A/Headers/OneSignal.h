@@ -43,6 +43,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UserNotifications/UserNotifications.h>
+#import "OneSignalMobileProvision.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wstrict-prototypes"
@@ -367,6 +368,8 @@ extern NSString * const kOSSettingsKeyInAppLaunchURL;
 /*Prompt user yes/no to open URL's from push notifications*/
 extern NSString * const kOSSSettingsKeyPromptBeforeOpeningPushURL;
 
+extern NSString * const kOSSSettingsKeyReleaseMode;
+
 /* iOS 10 +
  Set notification's in-focus display option.
  Value must be an OSNotificationDisplayType enum
@@ -389,6 +392,7 @@ typedef NS_ENUM(NSUInteger, ONE_S_LOG_LEVEL) {
     ONE_S_LL_NONE, ONE_S_LL_FATAL, ONE_S_LL_ERROR, ONE_S_LL_WARN, ONE_S_LL_INFO, ONE_S_LL_DEBUG, ONE_S_LL_VERBOSE
 };
 
++ (UIApplicationReleaseMode) releaseMode;
 
 /*
  Initialize OneSignal.

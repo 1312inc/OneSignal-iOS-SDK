@@ -106,6 +106,8 @@ NSString* const kOSSSettingsKeyPromptBeforeOpeningPushURL = @"kOSSSettingsKeyPro
 /* Used to determine if the app is able to present it's own customized Notification Settings view (iOS 12+) */
 NSString* const kOSSettingsKeyProvidesAppNotificationSettings = @"kOSSettingsKeyProvidesAppNotificationSettings";
 
+NSString* const kOSSSettingsKeyReleaseMode = @"kOSSSettingsKeyReleaseMode";
+
 @implementation OSPermissionSubscriptionState
 - (NSString*)description {
     static NSString* format = @"<OSPermissionSubscriptionState:\npermissionStatus: %@,\nsubscriptionStatus: %@\n>";
@@ -199,6 +201,7 @@ BOOL disableBadgeClearing = NO;
 BOOL mShareLocation = YES;
 BOOL requestedProvisionalAuthorization = false;
 BOOL usesAutoPrompt = false;
+UIApplicationReleaseMode userReleaseMode = UIApplicationReleaseUnknown;
 
 static BOOL providesAppNotificationSettings = false;
 
@@ -669,6 +672,10 @@ static OneSignalOutcomeEventsController* _outcomeEventsController;
     
     if (settings[kOSSettingsKeyProvidesAppNotificationSettings] && [settings[kOSSettingsKeyProvidesAppNotificationSettings] isKindOfClass:[NSNumber class]] && [OneSignalHelper isIOSVersionGreaterThanOrEqual:@"12.0"])
         providesAppNotificationSettings = [settings[kOSSettingsKeyProvidesAppNotificationSettings] boolValue];
+    
+    if (settings[kOSSSettingsKeyReleaseMode] && [settings[kOSSSettingsKeyReleaseMode] isKindOfClass:[NSNumber class]]) {
+        userReleaseMode = [settings[kOSSSettingsKeyReleaseMode] intValue];
+    }
     
     // Register with Apple's APNS server if we registed once before or if auto-prompt hasn't been disabled.
     if (usesAutoPrompt || registeredWithApple)
@@ -1560,6 +1567,11 @@ static dispatch_queue_t serialQueue;
     });
 }
 
++ (UIApplicationReleaseMode)releaseMode
+{
+    return [OneSignalMobileProvision releaseMode];
+}
+
 + (void)registerUserInternal {
     
     // return if the user has not granted privacy permissions
@@ -1642,7 +1654,8 @@ static dispatch_queue_t serialQueue;
         }
     }
     
-    let releaseMode = [OneSignalMobileProvision releaseMode];
+    let releaseMode = userReleaseMode != UIApplicationReleaseUnknown ? userReleaseMode : [OneSignalMobileProvision releaseMode];
+    [OneSignal onesignal_Log:ONE_S_LL_DEBUG message:[NSString stringWithFormat:@"userReleaseMode: %ld", userReleaseMode]];
     if (releaseMode == UIApplicationReleaseDev || releaseMode == UIApplicationReleaseAdHoc || releaseMode == UIApplicationReleaseWildcard)
         dataDic[@"test_type"] = [NSNumber numberWithInt:releaseMode];
     
